@@ -1,10 +1,3 @@
-/*
-Scrivi una funzione che accetti 
-una stringa come parametro e restituisca 
-la stessa stringa ma con le iniziali 
-delle parole tutte in maiuscolo
-*/
-
 const phrase = prompt("Inserisci frase");
 
 function capitalWords(string) {

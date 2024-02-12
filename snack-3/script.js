@@ -1,12 +1,3 @@
-/*
-Scrivi una funzione che accetti 
-tre argomenti:
-un array e due numeri 
-(“a” più piccolo di “b” e “b” grande 
-al massimo quanto il numero di 
-elementi dell’array).
-*/
-
 // Dichiaro array come esempio
 const arrayNumeri = [1, 2, 3, 4, 5, 6];
 
@@ -23,4 +14,8 @@ function cuttedArray(array, min, max) {
     
 }
 
-console.log(cuttedArray(arrayNumeri, 0, 3));
+// Stampo array originale
+const outputOriginal = document.getElementById("output-origin").innerText = (arrayNumeri).join(" ");
+
+// Stampo array con intervallo
+const output = document.getElementById("output").innerText = ((cuttedArray(arrayNumeri, 0, 3)).join(" "));

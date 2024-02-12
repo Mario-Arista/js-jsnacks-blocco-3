@@ -1,13 +1,3 @@
-/*
-Scrivi una funzione che fonda 
-due array presi come parametri
-(date per scontato che abbiano lo stesso 
-    numero di elementi) 
-prendendo alternativamente gli elementi 
-da uno e dall’altro
-es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
-*/
-
 // Dichiaro due array come esempio
 const arrayLettere = ["a", "b", "c"];
 const arrayNumeri = [1, 2, 3];
@@ -26,5 +16,15 @@ function fusionArray(array1, array2) {
     
 }
 
-console.log(fusionArray(arrayLettere, arrayNumeri));
+
+// Rendo visibile elemento in pagina
+document.getElementById("hidden").classList.remove("d-none");
+
+// Stampo array originari in pagina
+const outputArrayOne = document.getElementById("output-array1").innerText = ((arrayLettere).join(" "));
+const outputArrayTwo = document.getElementById("output-array2").innerText = ((arrayNumeri).join(" "));
+
+
+// Stampo array riordinato in pagina
+const output = document.getElementById("output").innerText = (fusionArray(arrayLettere, arrayNumeri).join(" "));
 
