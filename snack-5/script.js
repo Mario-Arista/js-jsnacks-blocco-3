@@ -5,7 +5,7 @@ la stessa stringa ma con le iniziali
 delle parole tutte in maiuscolo
 */
 
-const phrase = "uomo che usciva la gente";
+const phrase = prompt("Inserisci frase");
 
 function capitalWords(string) {
 
@@ -17,20 +17,22 @@ function capitalWords(string) {
   let FirstLetterCapitalWords = [];
 
   for (let i = 0; i < words.length; i++) {
+    // Divido ogni parola in array di lettere
     let letters = words[i].split("");
-
+    // Rendo maiuscola la prima lettera
     letters[0] = letters[0].toUpperCase();
-
+    // Unisco parola con prima lettera maiusc
     let capitallizedword = letters.join("");
-
+    // Unisco parola all'array
     FirstLetterCapitalWords.push(capitallizedword);
 
   }
 
   console.log(FirstLetterCapitalWords);
 
-  return FirstLetterCapitalWords;
+  return FirstLetterCapitalWords.join(" ");
 
 }
 
 const output = document.getElementById("output").innerText = capitalWords(phrase);
+
