@@ -3,7 +3,7 @@ Scrivi una funzione  che accetti una stringa come parametro e restituisca la str
 */
 
 // Dichiaro array come esempio
-const parola = "webmaster";
+const parola = prompt("Scrivi una parola");
 
 function orderedArray(stringa) {
 
