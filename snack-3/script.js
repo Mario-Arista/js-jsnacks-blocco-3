@@ -12,7 +12,7 @@ const arrayNumeri = [1, 2, 3, 4, 5, 6];
 
 function cuttedArray(array, min, max) {
 
-    // dichiaro array unione
+    // dichiaro array a cui mettere un intervallo
     const arrayNuovo = [];
 
     for (let i = min; i < max; i++) {
