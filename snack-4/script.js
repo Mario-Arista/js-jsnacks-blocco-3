@@ -1,14 +1,10 @@
-/*
-Scrivi una funzione  che accetti una stringa come parametro e restituisca la stringa con i caratteri ordinati alfabeticamente
-*/
-
 // Dichiaro array come esempio
-const parola = prompt("Scrivi una parola");
+const word = prompt("Scrivi una parola");
 
-function orderedArray(stringa) {
+function orderedArray(string) {
 
-    return stringa.split("").sort().join("");
+    return string.split("").sort().join("");
     
 }
 
-const output = document.getElementById("output").innerText = orderedArray(parola);
+const output = document.getElementById("output").innerText = orderedArray(word);
